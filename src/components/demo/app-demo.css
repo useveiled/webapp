@@ -1,0 +1,45 @@
+/* AppDemo's own bits. Everything else on the stage is the app's design
+   system (globals.css). Prefix: vd-. */
+
+/* The stage carries the site's text font and colours. */
+.hd-stage.vd-stage {
+  font: 400 13px/1.45 var(--font-sans);
+  color: var(--fg);
+  background: var(--ink-0);
+}
+
+/* A text caret, shown only while a field is focused. */
+.vd-caret {
+  display: inline-block;
+  width: 1.5px;
+  height: 15px;
+  margin-left: 1px;
+  background: var(--signal);
+  animation: vd-blink 1s steps(1) infinite;
+}
+@keyframes vd-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* The working spinner while a transfer settles. */
+.vd-spin {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  border-radius: 50%;
+  border: 2px solid rgba(184, 172, 242, 0.22);
+  border-top-color: var(--signal);
+  animation: vd-turn 0.8s linear infinite;
+}
+@keyframes vd-turn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The log's cursor block. */
+.vd-block {
+  animation: vd-blink 1s steps(1) infinite;
+}
