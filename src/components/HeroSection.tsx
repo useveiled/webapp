@@ -20,6 +20,8 @@ export function HeroSection() {
             <p className="t-lead veil-in [animation-delay:60ms]">
               Private banking on Solana for you and your AI agents. Amounts stay encrypted end to end,
               agents spend only inside limits the chain enforces, and you keep your own keys.
+
+              CA: EHjAE3NxqMbQnjNZM1eXBVPTP9NXZJ5YTvjBodQ9pump
             </p>
             <div className="veil-in mt-7 flex flex-wrap gap-3 [animation-delay:120ms]">
               <Link href="/signup" className="btn btn-primary btn-lg">
